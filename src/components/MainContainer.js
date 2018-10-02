@@ -14,6 +14,7 @@ class MainContainer extends Component {
 
   handleClick = (image) => {
     const img = image.target;
+    image.clicked=true;
     if(this.state.id === img.id){
       this.setState({message: `That's not right!`, score: 0});
     }
@@ -29,30 +30,33 @@ class MainContainer extends Component {
 
   render() {
     return (
-      <div>
-      
-         <h1>&nbsp;{this.state.message}</h1>
-         <h2>&nbsp;Score: {this.state.score}  &nbsp; | &nbsp; High score: {this.state.highscore}</h2>
-        <hr />
-        <Container fluid>
-            <Row >
+      <div >
+      <Header message={this.state.message} score={this.state.score} highscore={this.state.highscore} />
+      <Container fluid>
+          {/* EXPLICITLY BREAKING INTO 3x4 */}
+          <div className='mx-auto pt-4'>
+            <Row > 
               <CharliePic id={this.state.AllImages[0].id} handleClick={this.handleClick}/> 
               <CharliePic id={this.state.AllImages[1].id} handleClick={this.handleClick} /> 
               <CharliePic id={this.state.AllImages[2].id} handleClick={this.handleClick}/>
               <CharliePic id={this.state.AllImages[3].id} handleClick={this.handleClick}/>
             </Row>
+
             <Row >
               <CharliePic id={this.state.AllImages[4].id} handleClick={this.handleClick}/> 
               <CharliePic id={this.state.AllImages[5].id} handleClick={this.handleClick}/> 
               <CharliePic id={this.state.AllImages[6].id} handleClick={this.handleClick}/>
               <CharliePic id={this.state.AllImages[7].id} handleClick={this.handleClick}/>
             </Row>
+
             <Row >
               <CharliePic id={this.state.AllImages[8].id} handleClick={this.handleClick}/> 
               <CharliePic id={this.state.AllImages[9].id} handleClick={this.handleClick} /> 
               <CharliePic id={this.state.AllImages[10].id} handleClick={this.handleClick}/>
               <CharliePic id={this.state.AllImages[11].id} handleClick={this.handleClick} />
             </Row>
+            </div>
+
         </Container>
       </div>
     );
