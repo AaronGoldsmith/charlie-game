@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import MainContainer from "./components/MainContainer";
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const App = () => <MainContainer />;
+const app_wrapper = document.getElementById("app");
+
+app_wrapper ? ReactDOM.render(<App />, app_wrapper): false;

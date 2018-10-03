@@ -1,3 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: visible;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.wrapper{
+  width:100%;
+}
+
+.col-md-3{
+  display:inline-block;
+}
+.mx-auto{
+  margin: 0px auto;
+}
+.py-3{
+  padding: 8px 0px;
+}
+.float-l{
+  float:left;
+}
+.float-r{
+  float:right;
+}
+
+.row{
+  display:block;
+  width: 100%;
+}
+.navbar{
+    display:inline-block;
+}
+nav{
+    width: 100%;
+}
+nav  h2{
+    padding:0px 20px;
+}
 
 .imgContent{
   background: #FFF;
@@ -35,3 +81,4 @@ h3.helper{
 
   background: rgba(0,0,0,0.95);
   border-radius: 50%;}
+
