@@ -2,61 +2,61 @@
   {
     "id": 1,
     "name": "charlie1",
-    "image": "/assets/images/charlie1.jpg"
+    "image": "../../assets/images/charlie1.jpg"
   },
   {
     "id": 2,
     "name": "charlie2",
-    "image": "/assets/images/charlie2.jpg"
+    "image": "../../assets/images/charlie2.jpg"
   },
   {
     "id": 3,
     "name": "charlie3",
-    "image": "/assets/images/charlie3.jpg"
+    "image": "../../assets/images/charlie3.jpg"
   },
   {
     "id": 4,
     "name": "charlie4",
-    "image": "/assets/images/charlie4.jpg"
+    "image": "../../assets/images/charlie4.jpg"
   },
   {
     "id": 5,
     "name": "charlie5",
-    "image": "/assets/images/charlie5.jpg"
+    "image": "../../assets/images/charlie5.jpg"
   },
   {
     "id": 6,
     "name": "charlie6",
-    "image": "/assets/images/charlie6.jpg"
+    "image": "../../assets/images/charlie6.jpg"
   },
   {
     "id": 7,
     "name": "charlie7",
-    "image": "/assets/images/charlie7.jpg"
+    "image": "../../assets/images/charlie7.jpg"
   },
   {
     "id": 8,
     "name": "charlie8",
-    "image": "/src/assets/images/charlie8.jpg"
+    "image": "../../assets/images/charlie8.jpg"
   },
   {
     "id": 9,
     "name": "charlie9",
-    "image": "/assets/images/charlie9.jpg"
+    "image": "../../assets/images/charlie9.jpg"
   },
   {
     "id": 10,
     "name": "charlie10",
-    "image": "/assets/images/charlie10.jpg"
+    "image": "../../assets/images/charlie10.jpg"
   },
   {
     "id": 11,
     "name": "charlie11",
-    "image": "/assets/images/charlie11.jpg"
+    "image": "../../assets/images/charlie11.jpg"
   },
   {
     "id": 12,
     "name": "charlie12",
-    "image": "/assets/images/charlie12.jpg"
+    "image": "../../assets/images/charlie12.jpg"
   }
 ]
