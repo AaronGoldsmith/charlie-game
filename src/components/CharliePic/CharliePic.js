@@ -26,10 +26,9 @@ const CharliePic = props => (
 
     <img className="square"
          onClick={props.handleClick}
-         clicked={false}
          id = {props.id}
          src= {charlies[`${props.id}`-1]}
-         alt="charlie" />
+         alt={`charlie ${props.id}`} />
     </div>
   </Col>  
 );

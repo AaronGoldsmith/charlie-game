@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "assets": "../build/static/media",
+  "assets": "../src/components/assets",
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
