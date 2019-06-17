@@ -5,11 +5,24 @@ const path = require('path');
 
 module.exports = {
   mode: "production",
-  entry: './src/index.js',
+  entry: {index: './src/index.js'},
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    chunkFilename: '[name].bundle.js'
+    filename: '[name].bundle.js'
   },
+//   optimization: {
+//       splitChunks: {
+//           chunks: 'all',
+//           cacheGroups: {
+//             commons: {
+//             name: 'commons',
+//             chunks: 'initial',
+//             minChunks: 2
+//             }
+//           }
+//       }
+//   },
   module: {
     rules: [
       {
@@ -34,11 +47,24 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|svg)$/,
-        loader: "url-loader",
+        loader: "file-loader",
       }, 
+      {
+        test: /\.bundle\.js$/,
+        use: [
+            {
+            loader: 'bundle-loader',
+            options: {
+                lazy: true,
+                name: 'chunk'
+            }
+            }
+        ]
+      }
     ]
   },
    plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
