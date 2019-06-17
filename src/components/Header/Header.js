@@ -1,17 +1,13 @@
 import React from "react";
-
+import "./Header.css"
 const Header = (props) => (
-  <div>
-    <nav className="nav navbar navbar-lg bg-primary ">
-        <div className="float-left">
-           <h1>{props.message}</h1>
-        </div>
-        <div className="float-right">
+    <nav className="nav navbar">
+        <h2 className="float-l">{props.message}</h2>
+        <div className="float-r">
            <h2>Score:  {props.score}</h2>
            <h2>High Score:  {props.highscore}</h2>
         </div>
       </nav>
-  </div>
 );
 
 export default Header;

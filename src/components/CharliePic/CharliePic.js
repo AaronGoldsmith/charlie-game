@@ -22,7 +22,7 @@ const CharliePic = props => (
   <Col className="mx-1 my-3" size="md-3">
 
     <div className="imgContent">
-    <h3 className='helper'>{props.id}</h3>
+        <div className="bg-blck"><h3 className='helper'>{props.id}</h3></div>
 
     <img className="square"
          onClick={props.handleClick}
