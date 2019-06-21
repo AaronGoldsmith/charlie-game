@@ -1,1 +1,0 @@
-export {charlie1} from './charlie1.jpg'
